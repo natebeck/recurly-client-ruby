@@ -4,23 +4,23 @@
 # need and we will usher them to the appropriate places.
 module Recurly
   module Resources
-    class AccountBalance < Resource
+    class SubscriptionShipping < Resource
 
-      # @!attribute account
-      #   @return [AccountMini]
-      define_attribute :account, :AccountMini
-
-      # @!attribute balances
-      #   @return [Array[AccountBalanceAmount]]
-      define_attribute :balances, Array, {:item_type => :AccountBalanceAmount}
+      # @!attribute amount
+      #   @return [Float] Subscription's shipping cost
+      define_attribute :amount, Float
 
       # @!attribute object
       #   @return [String] Object type
       define_attribute :object, String
 
-      # @!attribute past_due
-      #   @return [Boolean]
-      define_attribute :past_due, :Boolean
+      # @!attribute shipping_address
+      #   @return [ShippingAddress]
+      define_attribute :shipping_address, :ShippingAddress
+
+      # @!attribute shipping_method
+      #   @return [ShippingMethodMini]
+      define_attribute :shipping_method, :ShippingMethodMini
     end
   end
 end

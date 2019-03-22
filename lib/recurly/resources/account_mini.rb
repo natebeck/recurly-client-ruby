@@ -36,7 +36,7 @@ module Recurly
 
       # @!attribute object
       #   @return [String] Object type
-      define_attribute :object, String
+      define_attribute :object, String, {:read_only => true}
 
       # @!attribute parent_account_id
       #   @return [String]
