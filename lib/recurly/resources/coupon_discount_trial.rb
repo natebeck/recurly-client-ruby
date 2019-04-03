@@ -12,7 +12,7 @@ module Recurly
 
       # @!attribute unit
       #   @return [String] Temporal unit of the free trial
-      define_attribute :unit, String
+      define_attribute :unit, String, { :enum => ["day", "week", "month"] }
     end
   end
 end

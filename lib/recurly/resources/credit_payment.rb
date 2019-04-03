@@ -38,19 +38,11 @@ module Recurly
       #   @return [String] Object type
       define_attribute :object, String
 
-      # @!attribute original_credit_payment_id
-      #   @return [String] For credit payments with action `refund`, this is the credit payment that was refunded.
-      define_attribute :original_credit_payment_id, String
-
       # @!attribute original_invoice
       #   @return [InvoiceMini]
       define_attribute :original_invoice, :InvoiceMini
 
-      # @!attribute refund_transaction
-      #   @return [Transaction]
-      define_attribute :refund_transaction, :Transaction
-
-      # @!attribute updated_at
+      # @!attribute [r] updated_at
       #   @return [DateTime] Last updated at
       define_attribute :updated_at, DateTime
 
