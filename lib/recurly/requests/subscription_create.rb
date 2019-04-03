@@ -51,11 +51,11 @@ module Recurly
       define_attribute :next_bill_date, DateTime
 
       # @!attribute plan_code
-      #   @return [String] You must provide either a `plan_code` or `plan_id`. If both are provided the `plan_id` will be used.
+      #   @return [String] Plan code
       define_attribute :plan_code, String
 
       # @!attribute plan_id
-      #   @return [String] You must provide either a `plan_code` or `plan_id`. If both are provided the `plan_id` will be used.
+      #   @return [String] Plan ID
       define_attribute :plan_id, String
 
       # @!attribute po_number
