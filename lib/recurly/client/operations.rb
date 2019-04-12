@@ -149,15 +149,12 @@ module Recurly
     # @return [Resources::Account] An account.
     # @example
     #   begin
-    #     # Requires a string keyword argument `account_id`.
-    #     # - An account's `id` value: "hympfmu77b4d"
-    #     # - An account's `code` value prefixed with `code-`: "code-benjamin.dumonde@example.com"
     #     account = @client.get_account(account_id: account_id)
-    #   rescue Recurly::Errors::NotFoundError => e
-    #     puts e
-    #     # => Recurly::NotFoundError: Couldn't find Account with code = benjamin.dumonde@example.com
-    #     puts e.recurly_error
-    #     # => #<Recurly::Error:0x007f8b29918618 @attributes={:type=>"not_found", :message=>"Couldn't find Account with code = benjamin.dumonde@example.com", :params=>[{"param"=>"account_id"}]}>
+    #     puts "Got Account #{account}"
+    #   rescue Recurly::Errors::NotFoundError
+    #     # If the resource was not found, you may want to alert the user or
+    #     # just return nil
+    #     puts "Resource Not Found"
     #   end
     #
     def get_account(account_id:)
@@ -2037,15 +2034,14 @@ module Recurly
     # @return [Resources::Subscription] A subscription.
     # @example
     #   begin
-    #     # Requires a string keyword argument `subscription_id`.
-    #     # - An subscription's `id` value: "hympfmu77b4d"
-    #     # - An subscription's `uuid` value prefixed with `uuid-`: "uuid-419cd2effd49236e502ccc42db928280"
-    #     subscription = @client.get_subscription(subscription_id: subscription_id)
-    #   rescue Recurly::Errors::NotFoundError => e
-    #     puts e
-    #     # => Recurly::NotFoundError: Couldn't Subscription with uuid = 419cd2effd49236e502ccc42db928280
-    #     puts e.recurly_error
-    #     # => #<Recurly::Error:0x007f8b29918618 @attributes={:type=>"not_found", :message=>"Couldn't find Subscription with uuid = 419cd2effd49236e502ccc42db928280", :params=>[{"param"=>"subscription_id"}]}>
+    #     subscription = @client.get_subscription(
+    #       subscription_id: subscription_id
+    #     )
+    #     puts "Got Subscription #{subscription}"
+    #   rescue Recurly::Errors::NotFoundError
+    #     # If the resource was not found, you may want to alert the user or
+    #     # just return nil
+    #     puts "Resource Not Found"
     #   end
     #
     def get_subscription(subscription_id:)
