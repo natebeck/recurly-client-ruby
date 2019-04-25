@@ -30,7 +30,7 @@ module Recurly
       #   @return [DateTime] When the account was created.
       define_attribute :created_at, DateTime
 
-      # @!attribute [r] deleted_at
+      # @!attribute deleted_at
       #   @return [DateTime] If present, when the account was last marked inactive.
       define_attribute :deleted_at, DateTime
 

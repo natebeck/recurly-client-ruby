@@ -28,7 +28,7 @@ module Recurly
 
       # @!attribute object
       #   @return [String] Object type
-      define_attribute :object, String, { :read_only => true }
+      define_attribute :object, String
     end
   end
 end
