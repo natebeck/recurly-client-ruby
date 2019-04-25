@@ -104,7 +104,7 @@ module Recurly
 
       # @!attribute state
       #   @return [String] State
-      define_attribute :state, String, { :enum => ["active", "canceled", "expired", "failed", "future"] }
+      define_attribute :state, String
 
       # @!attribute subtotal
       #   @return [Float] Estimated total, before tax.

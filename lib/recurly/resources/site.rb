@@ -18,7 +18,7 @@ module Recurly
       #   @return [DateTime] Deleted at
       define_attribute :deleted_at, DateTime
 
-      # @!attribute [r] id
+      # @!attribute id
       #   @return [String] Site ID
       define_attribute :id, String
 

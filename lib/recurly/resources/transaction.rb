@@ -136,7 +136,7 @@ module Recurly
 
       # @!attribute type
       #   @return [String] Transaction type
-      define_attribute :type, String, { :enum => ["authorization", "capture", "purchase", "refund", "verify"] }
+      define_attribute :type, String
 
       # @!attribute uuid
       #   @return [String] The UUID is useful for matching data with the CSV exports and building URLs into Recurly's UI.

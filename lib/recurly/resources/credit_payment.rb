@@ -42,7 +42,7 @@ module Recurly
       #   @return [InvoiceMini]
       define_attribute :original_invoice, :InvoiceMini
 
-      # @!attribute [r] updated_at
+      # @!attribute updated_at
       #   @return [DateTime] Last updated at
       define_attribute :updated_at, DateTime
 
