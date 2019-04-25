@@ -58,9 +58,9 @@ module Recurly
       #   @return [String] Accounting code for invoice line items for the plan's setup fee. If no value is provided, it defaults to plan's accounting code.
       define_attribute :setup_fee_accounting_code, String
 
-      # @!attribute [r] state
+      # @!attribute state
       #   @return [String] Plans can be either active or inactive.
-      define_attribute :state, String, { :read_only => true, :enum => ["active", "inactive"] }
+      define_attribute :state, String
 
       # @!attribute tax_code
       #   @return [String] Used by Avalara, Vertex, and Recurly’s EU VAT tax feature. The tax code values are specific to each tax system. If you are using Recurly’s EU VAT feature `P0000000` is `physical`, `D0000000` is `digital`, and an empty string is `unknown`.

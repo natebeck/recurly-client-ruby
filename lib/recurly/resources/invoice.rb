@@ -112,7 +112,7 @@ module Recurly
 
       # @!attribute type
       #   @return [String] The original invoice will have a type of `purchase`. Any refunds or voids will create a negative invoice to cancel out the original. `line_item_refund` indicates that specific line items were refunded, while `open_amount_refund` only indicates money was refunded.
-      define_attribute :type, String, { :enum => ["purchase", "line_item_refund", "open_amount_refund"] }
+      define_attribute :type, String
 
       # @!attribute updated_at
       #   @return [DateTime] Last updated at
