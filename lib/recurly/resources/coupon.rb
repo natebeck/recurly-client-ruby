@@ -106,7 +106,7 @@ module Recurly
       #   @return [String] On a bulk coupon, the template from which unique coupon codes are generated.
       define_attribute :unique_code_template, String
 
-      # @!attribute [r] unique_coupon_codes_count
+      # @!attribute unique_coupon_codes_count
       #   @return [Integer] When this number reaches `max_redemptions` the coupon will no longer be redeemable.
       define_attribute :unique_coupon_codes_count, Integer
 
