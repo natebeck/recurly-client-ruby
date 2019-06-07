@@ -16,6 +16,7 @@ module Recurly
     #   commas as separators, e.g. +ids=h1at4d57xlmy,gyqgg0d3v9n1,jrsm5b4yefg6+.
     #
     #   *Important notes:*
+    #
     #   * The +ids+ parameter cannot be used with any other ordering or filtering
     #     parameters (+limit+, +order+, +sort+, +begin_time+, +end_time+, etc)
     #   * Invalid or unknown IDs will be ignored, so you should check that the
@@ -53,6 +54,7 @@ module Recurly
     #   commas as separators, e.g. +ids=h1at4d57xlmy,gyqgg0d3v9n1,jrsm5b4yefg6+.
     #
     #   *Important notes:*
+    #
     #   * The +ids+ parameter cannot be used with any other ordering or filtering
     #     parameters (+limit+, +order+, +sort+, +begin_time+, +end_time+, etc)
     #   * Invalid or unknown IDs will be ignored, so you should check that the
@@ -224,6 +226,7 @@ module Recurly
     #   commas as separators, e.g. +ids=h1at4d57xlmy,gyqgg0d3v9n1,jrsm5b4yefg6+.
     #
     #   *Important notes:*
+    #
     #   * The +ids+ parameter cannot be used with any other ordering or filtering
     #     parameters (+limit+, +order+, +sort+, +begin_time+, +end_time+, etc)
     #   * Invalid or unknown IDs will be ignored, so you should check that the
@@ -303,6 +306,7 @@ module Recurly
     #   commas as separators, e.g. +ids=h1at4d57xlmy,gyqgg0d3v9n1,jrsm5b4yefg6+.
     #
     #   *Important notes:*
+    #
     #   * The +ids+ parameter cannot be used with any other ordering or filtering
     #     parameters (+limit+, +order+, +sort+, +begin_time+, +end_time+, etc)
     #   * Invalid or unknown IDs will be ignored, so you should check that the
@@ -367,6 +371,7 @@ module Recurly
     #   commas as separators, e.g. +ids=h1at4d57xlmy,gyqgg0d3v9n1,jrsm5b4yefg6+.
     #
     #   *Important notes:*
+    #
     #   * The +ids+ parameter cannot be used with any other ordering or filtering
     #     parameters (+limit+, +order+, +sort+, +begin_time+, +end_time+, etc)
     #   * Invalid or unknown IDs will be ignored, so you should check that the
@@ -416,6 +421,7 @@ module Recurly
     #   commas as separators, e.g. +ids=h1at4d57xlmy,gyqgg0d3v9n1,jrsm5b4yefg6+.
     #
     #   *Important notes:*
+    #
     #   * The +ids+ parameter cannot be used with any other ordering or filtering
     #     parameters (+limit+, +order+, +sort+, +begin_time+, +end_time+, etc)
     #   * Invalid or unknown IDs will be ignored, so you should check that the
@@ -450,6 +456,7 @@ module Recurly
     #   commas as separators, e.g. +ids=h1at4d57xlmy,gyqgg0d3v9n1,jrsm5b4yefg6+.
     #
     #   *Important notes:*
+    #
     #   * The +ids+ parameter cannot be used with any other ordering or filtering
     #     parameters (+limit+, +order+, +sort+, +begin_time+, +end_time+, etc)
     #   * Invalid or unknown IDs will be ignored, so you should check that the
@@ -532,6 +539,7 @@ module Recurly
     #   commas as separators, e.g. +ids=h1at4d57xlmy,gyqgg0d3v9n1,jrsm5b4yefg6+.
     #
     #   *Important notes:*
+    #
     #   * The +ids+ parameter cannot be used with any other ordering or filtering
     #     parameters (+limit+, +order+, +sort+, +begin_time+, +end_time+, etc)
     #   * Invalid or unknown IDs will be ignored, so you should check that the
@@ -552,6 +560,7 @@ module Recurly
     #   *Note:* this value is an ISO8601 timestamp. A partial timestamp that does not include a time zone will default to UTC.
     #
     # @param state [String] Filter by state.
+    #
     #   - When +state=active+, +state=canceled+, +state=expired+, or +state=future+, subscriptions with states that match the query and only those subscriptions will be returned.
     #   - When +state=in_trial+, only subscriptions that have a trial_started_at date earlier than now and a trial_ends_at date later than now will be returned.
     #   - When +state=live+, only subscriptions that are in an active, canceled, or future state or are in trial will be returned.
@@ -571,6 +580,7 @@ module Recurly
     #   commas as separators, e.g. +ids=h1at4d57xlmy,gyqgg0d3v9n1,jrsm5b4yefg6+.
     #
     #   *Important notes:*
+    #
     #   * The +ids+ parameter cannot be used with any other ordering or filtering
     #     parameters (+limit+, +order+, +sort+, +begin_time+, +end_time+, etc)
     #   * Invalid or unknown IDs will be ignored, so you should check that the
@@ -606,6 +616,7 @@ module Recurly
     #   commas as separators, e.g. +ids=h1at4d57xlmy,gyqgg0d3v9n1,jrsm5b4yefg6+.
     #
     #   *Important notes:*
+    #
     #   * The +ids+ parameter cannot be used with any other ordering or filtering
     #     parameters (+limit+, +order+, +sort+, +begin_time+, +end_time+, etc)
     #   * Invalid or unknown IDs will be ignored, so you should check that the
@@ -639,6 +650,7 @@ module Recurly
     #   commas as separators, e.g. +ids=h1at4d57xlmy,gyqgg0d3v9n1,jrsm5b4yefg6+.
     #
     #   *Important notes:*
+    #
     #   * The +ids+ parameter cannot be used with any other ordering or filtering
     #     parameters (+limit+, +order+, +sort+, +begin_time+, +end_time+, etc)
     #   * Invalid or unknown IDs will be ignored, so you should check that the
@@ -707,6 +719,7 @@ module Recurly
     #   commas as separators, e.g. +ids=h1at4d57xlmy,gyqgg0d3v9n1,jrsm5b4yefg6+.
     #
     #   *Important notes:*
+    #
     #   * The +ids+ parameter cannot be used with any other ordering or filtering
     #     parameters (+limit+, +order+, +sort+, +begin_time+, +end_time+, etc)
     #   * Invalid or unknown IDs will be ignored, so you should check that the
@@ -773,6 +786,7 @@ module Recurly
     #   commas as separators, e.g. +ids=h1at4d57xlmy,gyqgg0d3v9n1,jrsm5b4yefg6+.
     #
     #   *Important notes:*
+    #
     #   * The +ids+ parameter cannot be used with any other ordering or filtering
     #     parameters (+limit+, +order+, +sort+, +begin_time+, +end_time+, etc)
     #   * Invalid or unknown IDs will be ignored, so you should check that the
@@ -817,6 +831,7 @@ module Recurly
     #   commas as separators, e.g. +ids=h1at4d57xlmy,gyqgg0d3v9n1,jrsm5b4yefg6+.
     #
     #   *Important notes:*
+    #
     #   * The +ids+ parameter cannot be used with any other ordering or filtering
     #     parameters (+limit+, +order+, +sort+, +begin_time+, +end_time+, etc)
     #   * Invalid or unknown IDs will be ignored, so you should check that the
@@ -912,6 +927,7 @@ module Recurly
     #   commas as separators, e.g. +ids=h1at4d57xlmy,gyqgg0d3v9n1,jrsm5b4yefg6+.
     #
     #   *Important notes:*
+    #
     #   * The +ids+ parameter cannot be used with any other ordering or filtering
     #     parameters (+limit+, +order+, +sort+, +begin_time+, +end_time+, etc)
     #   * Invalid or unknown IDs will be ignored, so you should check that the
@@ -949,6 +965,7 @@ module Recurly
     #   commas as separators, e.g. +ids=h1at4d57xlmy,gyqgg0d3v9n1,jrsm5b4yefg6+.
     #
     #   *Important notes:*
+    #
     #   * The +ids+ parameter cannot be used with any other ordering or filtering
     #     parameters (+limit+, +order+, +sort+, +begin_time+, +end_time+, etc)
     #   * Invalid or unknown IDs will be ignored, so you should check that the
@@ -993,6 +1010,7 @@ module Recurly
     #   commas as separators, e.g. +ids=h1at4d57xlmy,gyqgg0d3v9n1,jrsm5b4yefg6+.
     #
     #   *Important notes:*
+    #
     #   * The +ids+ parameter cannot be used with any other ordering or filtering
     #     parameters (+limit+, +order+, +sort+, +begin_time+, +end_time+, etc)
     #   * Invalid or unknown IDs will be ignored, so you should check that the
@@ -1050,6 +1068,7 @@ module Recurly
     #   commas as separators, e.g. +ids=h1at4d57xlmy,gyqgg0d3v9n1,jrsm5b4yefg6+.
     #
     #   *Important notes:*
+    #
     #   * The +ids+ parameter cannot be used with any other ordering or filtering
     #     parameters (+limit+, +order+, +sort+, +begin_time+, +end_time+, etc)
     #   * Invalid or unknown IDs will be ignored, so you should check that the
@@ -1130,6 +1149,7 @@ module Recurly
     #   commas as separators, e.g. +ids=h1at4d57xlmy,gyqgg0d3v9n1,jrsm5b4yefg6+.
     #
     #   *Important notes:*
+    #
     #   * The +ids+ parameter cannot be used with any other ordering or filtering
     #     parameters (+limit+, +order+, +sort+, +begin_time+, +end_time+, etc)
     #   * Invalid or unknown IDs will be ignored, so you should check that the
@@ -1213,6 +1233,7 @@ module Recurly
     #   commas as separators, e.g. +ids=h1at4d57xlmy,gyqgg0d3v9n1,jrsm5b4yefg6+.
     #
     #   *Important notes:*
+    #
     #   * The +ids+ parameter cannot be used with any other ordering or filtering
     #     parameters (+limit+, +order+, +sort+, +begin_time+, +end_time+, etc)
     #   * Invalid or unknown IDs will be ignored, so you should check that the
@@ -1258,6 +1279,7 @@ module Recurly
     #   commas as separators, e.g. +ids=h1at4d57xlmy,gyqgg0d3v9n1,jrsm5b4yefg6+.
     #
     #   *Important notes:*
+    #
     #   * The +ids+ parameter cannot be used with any other ordering or filtering
     #     parameters (+limit+, +order+, +sort+, +begin_time+, +end_time+, etc)
     #   * Invalid or unknown IDs will be ignored, so you should check that the
@@ -1278,6 +1300,7 @@ module Recurly
     #   *Note:* this value is an ISO8601 timestamp. A partial timestamp that does not include a time zone will default to UTC.
     #
     # @param state [String] Filter by state.
+    #
     #   - When +state=active+, +state=canceled+, +state=expired+, or +state=future+, subscriptions with states that match the query and only those subscriptions will be returned.
     #   - When +state=in_trial+, only subscriptions that have a trial_started_at date earlier than now and a trial_ends_at date later than now will be returned.
     #   - When +state=live+, only subscriptions that are in an active, canceled, or future state or are in trial will be returned.
@@ -1430,6 +1453,7 @@ module Recurly
     #   commas as separators, e.g. +ids=h1at4d57xlmy,gyqgg0d3v9n1,jrsm5b4yefg6+.
     #
     #   *Important notes:*
+    #
     #   * The +ids+ parameter cannot be used with any other ordering or filtering
     #     parameters (+limit+, +order+, +sort+, +begin_time+, +end_time+, etc)
     #   * Invalid or unknown IDs will be ignored, so you should check that the
@@ -1470,6 +1494,7 @@ module Recurly
     #   commas as separators, e.g. +ids=h1at4d57xlmy,gyqgg0d3v9n1,jrsm5b4yefg6+.
     #
     #   *Important notes:*
+    #
     #   * The +ids+ parameter cannot be used with any other ordering or filtering
     #     parameters (+limit+, +order+, +sort+, +begin_time+, +end_time+, etc)
     #   * Invalid or unknown IDs will be ignored, so you should check that the
@@ -1506,6 +1531,7 @@ module Recurly
     #   commas as separators, e.g. +ids=h1at4d57xlmy,gyqgg0d3v9n1,jrsm5b4yefg6+.
     #
     #   *Important notes:*
+    #
     #   * The +ids+ parameter cannot be used with any other ordering or filtering
     #     parameters (+limit+, +order+, +sort+, +begin_time+, +end_time+, etc)
     #   * Invalid or unknown IDs will be ignored, so you should check that the
